@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light"">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HotelRooms</a>
+            </div>
+            <searchbar class="d-flex">
+                <input type="text" id="filterInput" placeholder="Search for rooms...">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </nav>
+
+        <main>
+
+            <form class="display-7 text-center" id="Room-Form">
+                <div class="form-group">
+                    <label for="CustomerName">CustomerName</label>
+                    <input type="text" name="CustomerName" id="CustomerName" class="form-label mt-4">
+                </div>
+        
+            <br>
+            <div class="form-group">
+
+            <label for="CustomerAge" class="form-label mt-4">CustomerAge</label>
+            <input type="text" name="age" id="CustomerAge">
+
+            </div>
+            <br>
+            <div class="form-group">
+            <label for="CustomerNumber" class="form-label mt-4">CustomerNumber</label>
+            <input type="number" name="CustomerNumber" id="CustomerNumber">
+            </div>
+            <br>
+            <div class="form-group">
+            <label for="RoomNum" class="form-label mt-4">RoomNum</label>
+            <input type="text" name="RoomNUm" id="RoomNum">
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-4">Submit</button>
+
+            </form>
+
+            <table class="table table-hover mt-5">
+                <tr class="table-primary">
+                    <th>CustomerName</th>
+                    <th>CustomerAge</th>
+                    <th>CustomerNumber</th>
+                    <th>RoomNum</th>
+                    <th></th>
+                </tr>
+                <tbody id="Room-list">
+
+                </tbody>
+
+            </table>
+
+            
+        </main>
+
+        
+   
+
+
+
+
+<script src="main.js"></script>
+
+</body>
+</html>

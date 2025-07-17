@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+<body>
+    <header>
+        <div id="navbar" class="navbar">
+        <h2><i class="fa-solid fa-book-open"></i></h2>
+        <h1 class="title">My<span id="bookedit">Book</span>List</h1>
+        <div class="search">
+        <label for="searchbook"></label>
+        <input type="text" name="search" id="searchbook" placeholder="Search">
+
+        <button class="btnn" type="submit">Search</button>
+ 
+        </div>
+    </div>
+
+    </header>
+
+    <main>
+        <div id="bookforms">
+        <form id="bookform">
+            <div id="p2">
+        <label for="bookname" class="form-label">BookName</label>
+    
+        <input type="text" name="bookname" id="bookname">
+            <br>
+            
+        <label for="bookauthor" class="form-label">Author:</label>
+        <input type="text" name="bookauthor" id="bookauthor">
+        <br>
+        <label for="inbm">inbm#</label>
+        <input type="text" name="inbm" id="inbm">
+
+        <button class="addbtn" type="submit">Add Book</button>
+            </div>
+    </form>
+        </div>
+
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Isbn</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+
+
+    </main>
+    <script src="main.js"></script>
+    
+</body>
+</html>
